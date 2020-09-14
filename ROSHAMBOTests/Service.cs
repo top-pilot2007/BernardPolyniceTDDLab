@@ -19,7 +19,7 @@
             {
                 return "Scissors beats Paper";
             }
-            return "I'ts a Draw";
+            return "It's a Draw";
         }
     }
 }

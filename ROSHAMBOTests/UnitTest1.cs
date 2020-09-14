@@ -51,5 +51,20 @@ namespace ROSHAMBOTests
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        [Fact]
+        public void ADrawTests()
+        {
+            //Arrange
+            var service = new Service();
+            var reveal1 = "Paper";
+            var reveal2 = "Paper";
+            var expectedResult = "It's a Draw";
+
+            //Act
+            var result = service.Play(reveal1, reveal2);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
     }
 }
