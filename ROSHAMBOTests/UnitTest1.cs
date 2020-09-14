@@ -21,5 +21,20 @@ namespace ROSHAMBOTests
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        [Fact]
+        public void PaperBeatsRockTests()
+        {
+            //Arrange
+            var service = new Service();
+            var paper = "Paper";
+            var rock = "Rock";
+            var expectedResult = "Paper beats Rock";
+
+            //Act
+            var result = service.Play(paper, rock);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
     }
 }
