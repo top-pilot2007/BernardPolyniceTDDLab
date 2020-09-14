@@ -11,6 +11,10 @@
             {
                 return "Rock beats Scissors";
             }
+            if (firstReveal == "Paper" && secondReveal == "Rock")
+            {
+                return "Paper beats Rock";
+            }
             return "Scissors Wins";
         }
     }
