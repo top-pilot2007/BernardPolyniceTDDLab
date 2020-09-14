@@ -15,7 +15,11 @@
             {
                 return "Paper beats Rock";
             }
-            return "Scissors Wins";
+            if (firstReveal == "Scissors" && secondReveal == "Paper")
+            {
+                return "Scissors beats Paper";
+            }
+            return "I'ts a Draw";
         }
     }
 }
