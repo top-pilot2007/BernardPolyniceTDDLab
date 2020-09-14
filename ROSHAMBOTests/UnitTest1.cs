@@ -12,11 +12,11 @@ namespace ROSHAMBOTests
             //Arrange
             var service = new Service();
             var rock = "Rock";
-            var paper = "Paper";
-            var expectedResult= "Rock beats Paper";
+            var scissors = "Scissors";
+            var expectedResult= "Rock beats Scissors";
 
             //Act
-            var result = service.Play(rock, paper);
+            var result = service.Play(rock, scissors);
 
             //Assert
             Assert.Equal(expectedResult, result);

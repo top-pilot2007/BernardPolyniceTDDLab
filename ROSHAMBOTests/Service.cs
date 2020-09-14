@@ -7,11 +7,11 @@
         }
         public string Play (string firstReveal, string secondReveal)
         {
-            if (secondReveal == "Paper" && firstReveal == "Rock")
+            if (firstReveal == "Rock" && secondReveal == "Scissors")
             {
-                return "Paper wins";
+                return "Rock beats Scissors";
             }
-            return "Rock Wins";
+            return "Scissors Wins";
         }
     }
 }
